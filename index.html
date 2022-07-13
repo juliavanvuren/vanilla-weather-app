@@ -18,7 +18,6 @@
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
-
     <title>Vanilla Weather app</title>
   </head>
   <body>
@@ -60,7 +59,10 @@
                 <div class="float-left">
                   <strong id="temperature"></strong
                   ><span
-                    ><small class="units">°C | <a href="#">°F</a></small></span
+                    ><small class="units"
+                      ><a href="#" id="celsius-link" class="active">°C</a> |
+                      <a href="#" id="fahrenheit-link">°F</a></small
+                    ></span
                   >
                 </div>
               </div>
@@ -85,7 +87,6 @@
         </div>
       </div>
     </div>
-
     <script src="src/app.js"></script>
   </body>
 </html>

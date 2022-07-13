@@ -33,6 +33,14 @@ a {
   text-decoration: none;
 }
 
+.weather-temperature .active {
+  color: rgb(32, 33, 36);
+  cursor: default;
+}
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
+
 .weather-app-wrapper {
   max-width: 600px;
 }
