@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-  color: #157347;
+  color: rgb(5, 56, 55);
   font-size: 24px;
   font-weight: 600;
   line-height: 28.8px;
@@ -31,13 +31,23 @@ li:first-letter {
 
 a {
   text-decoration: none;
-  color: #157347;
+  color: #ec6e4c;
   font-weight: bold;
 }
 
 a:hover {
-  color: #60ac87;
+  color: #f88565;
   transition: 200ms ease-in-out all;
+}
+
+.btn {
+  background: #ec6e4c;
+  border: #ec6e4c;
+}
+
+.btn:hover {
+  background: #f88565;
+  border: #f88565;
 }
 
 .weather-temperature .active {
@@ -51,10 +61,9 @@ a:hover {
 .weather-app-wrapper {
   max-width: 600px;
   background: linear-gradient(
-    109.6deg,
-    rgb(251, 250, 225) 11.2%,
-    rgb(206, 240, 185) 47.5%,
-    rgb(100, 163, 111) 100.2%
+    110.7deg,
+    rgb(9, 154, 151) 6.3%,
+    rgb(21, 205, 168) 90.6%
   );
 }
 
@@ -62,7 +71,7 @@ a:hover {
   max-width: 600px;
   margin: 30px auto;
   padding: 20px;
-  border: 1px solid #157347;
+  border: 1px solid rgb(9, 154, 151);
   border-radius: 5px;
 }
 
@@ -74,7 +83,7 @@ a:hover {
 }
 
 .weather-temperature strong {
-  color: #157347;
+  color: rgb(5, 56, 55);
   font-size: 60px;
   line-height: 1;
   font-weight: 400;
@@ -107,4 +116,8 @@ a:hover {
 
 .weather-forecast-temp-min {
   opacity: 0.6;
+}
+
+.tagline {
+  margin: 0 auto;
 }
