@@ -60,11 +60,7 @@ a:hover {
 
 .weather-app-wrapper {
   max-width: 600px;
-  background: linear-gradient(
-    110.7deg,
-    rgb(9, 154, 151) 6.3%,
-    rgb(21, 205, 168) 90.6%
-  );
+  background-size: 100%;
 }
 
 .weather-app {
@@ -119,5 +115,6 @@ a:hover {
 }
 
 .tagline {
+  font-size: 12px;
   margin: 0 auto;
 }
