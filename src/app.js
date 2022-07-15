@@ -80,6 +80,7 @@ function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#cityname");
   let descriptionElement = document.querySelector("#description");
+  let feelsLikeElement = document.querySelector("#feels-like");
   let humidityElement = document.querySelector("#humidity");
   let windspeedElement = document.querySelector("#windspeed");
   let dateElement = document.querySelector("#date");
@@ -90,6 +91,7 @@ function displayTemperature(response) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
+  feelsLikeElement.innerHTML = Math.round(response.data.main.feels_like);
   humidityElement.innerHTML = Math.round(response.data.main.humidity);
   windspeedElement.innerHTML = Math.round(response.data.wind.speed);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);

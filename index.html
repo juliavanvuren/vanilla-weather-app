@@ -24,7 +24,11 @@
     <div class="container">
       <div
         class="weather-app-wrapper rounded"
-        style="background-image: url(images/background.jpg); background-size: cover;">
+        style="
+          background-image: url(images/background.jpg);
+          background-size: cover;
+        "
+      >
         <div class="weather-app">
           <form id="search-form" class="mb-3">
             <div class="row">
@@ -50,8 +54,10 @@
           <div class="overview">
             <h1 id="cityname"></h1>
             <ul>
-              <li>Last updated: <span id="date"></span></li>
-              <li id="description">Sunny</li>
+              <small>
+                <li>Last updated: <span id="date"></span></li>
+                <li id="description"></li>
+              </small>
             </ul>
           </div>
           <div class="row">
@@ -67,26 +73,31 @@
 
             <div class="col-6">
               <ul>
-                <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Windspeed: <span id="windspeed"></span>km/h</li>
+                <small>
+                  <li>Feels like: <span id="feels-like"></span>°C</li>
+                  <li>Humidity: <span id="humidity"></span>%</li>
+                  <li>Windspeed: <span id="windspeed"></span>km/h</li>
+                </small>
               </ul>
             </div>
             <div class="weather-forecast" id="forecast"></div>
           </div>
         </div>
       </div>
-      <small><div class="tagline">
-        <a
-          href="https://github.com/juliavanvuren/vanilla-weather-app"
-          target="_blank"
+      <div class="tagline">
+        <small>
+          <a
+            href="https://github.com/juliavanvuren/vanilla-weather-app"
+            target="_blank"
+          >
+            Open-source code</a
+          >
+          by Julia van Vuren |
+          <a href="https://www.freepik.com/vectors/watercolor-water"
+            >Watercolor water vector created by freepik - www.freepik.com
+          </a></small
         >
-          Open-source code</a
-        >
-        by Julia van Vuren |
-        <a href="https://www.freepik.com/vectors/watercolor-water"
-          >Watercolor water vector created by freepik - www.freepik.com
-        </a></small
-      ></div>
+      </div>
     </div>
     <script src="src/app.js"></script>
   </body>
