@@ -43,6 +43,8 @@ a:hover {
 .btn {
   background: #ec6e4c;
   border: #ec6e4c;
+  font-size: 12px;
+  padding: 10px 20px;
 }
 
 .btn:hover {
@@ -57,7 +59,7 @@ a:hover {
 
 .weather-app {
   max-width: 600px;
-  margin: 30px auto;
+  margin: 10px auto;
   padding: 20px;
   border: 1px solid #478b8c;
   border-radius: 5px;
